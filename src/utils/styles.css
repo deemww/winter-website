@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap');
+
+/* ── Global Styles ──────────────────────────────────────────────────────── */
+[data-testid="stAppViewContainer"] {
+    background-color: #ffffff;
+    font-family: 'Source Serif 4', Georgia, serif;
+}
+[data-testid="stHeader"] { background: transparent; }
+[data-testid="block-container"] {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    max-width: 1100px;
+}
+footer { visibility: hidden; }
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #1a2e1a;
+}
+
+/* ── Landing Page Styles ────────────────────────────────────────────────── */
+.hero-wrapper {
+    border-top: 3px solid #2c5f2e;
+    border-bottom: 1px solid #2c5f2e;
+    padding: 2.5rem 0 2rem 0;
+    margin-bottom: 2.8rem;
+    text-align: center;
+}
+.eyebrow {
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #2c5f2e;
+    margin-bottom: 0.9rem;
+}
+.hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 700;
+    color: #1a2e1a;
+    line-height: 1.15;
+    margin: 0 0 0.5rem 0;
+}
+.hero-subtitle {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    color: #4a6741;
+    margin-bottom: 1.4rem;
+}
+.hero-meta {
+    font-size: 0.8rem;
+    color: #6b7468;
+    letter-spacing: 0.05em;
+}
+.section-label {
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #2c5f2e;
+    border-left: 3px solid #2c5f2e;
+    padding-left: 0.6rem;
+    margin-bottom: 0.7rem;
+    display: block;
+}
+.pull-quote {
+    border-left: 4px solid #2c5f2e;
+    background: rgba(44, 95, 46, 0.06);
+    padding: 1.2rem 1.5rem;
+    margin: 1.8rem 0;
+    border-radius: 0 4px 4px 0;
+}
+.pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #2a3d28;
+    line-height: 1.6;
+    margin: 0;
+}
+.body-text {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.0rem;
+    color: #2a2a1e;
+    line-height: 1.82;
+    font-weight: 300;
+}
+.stat-row {
+    display: flex;
+    gap: 1px;
+    background: #2c5f2e;
+    border: 1px solid #2c5f2e;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1.5rem 0 2rem 0;
+}
+.stat-card {
+    flex: 1;
+    background: #ffffff;
+    padding: 1.2rem 1rem;
+    text-align: center;
+}
+.stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #2c5f2e;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+.stat-label {
+    font-size: 0.72rem;
+    color: #6b7468;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.question-block {
+    border-top: 1px solid #c8bfa8;
+    padding: 1.1rem 0;
+}
+.question-block:last-child { border-bottom: 1px solid #c8bfa8; }
+.question-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #2c5f2e;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.question-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.98rem;
+    color: #1a2e1a;
+    margin-bottom: 0.3rem;
+}
+.ornamental-divider {
+    text-align: center;
+    color: #2c5f2e;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    letter-spacing: 0.8em;
+    opacity: 0.5;
+}
+.footer-strip {
+    border-top: 1px solid #c8bfa8;
+    padding-top: 1rem;
+    margin-top: 3rem;
+    font-size: 0.72rem;
+    color: #8a8470;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+/* ── Dashboard Styles ───────────────────────────────────────────────────── */
+.dashboard-header {
+    border-bottom: 2px solid #2c5f2e;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+.dashboard-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    color: #1a2e1a;
+    line-height: 1.2;
+    margin: 0;
+}
+.metric-card {
+    background: rgba(44, 95, 46, 0.04);
+    border: 1px solid #c8bfa8;
+    border-radius: 4px;
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+}
+.metric-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c5f2e;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+.metric-label {
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.75rem;
+    color: #6b7468;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.site-detail-card {
+    background: rgba(44, 95, 46, 0.04);
+    border-left: 4px solid #2c5f2e;
+    border-radius: 0 4px 4px 0;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+.site-detail-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a2e1a;
+    margin-bottom: 1rem;
+}
+.site-detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed #c8bfa8;
+    font-family: 'Source Serif 4', serif;
+}
+.site-detail-row:last-child {
+    border-bottom: none;
+}
+.site-detail-label {
+    font-size: 0.85rem;
+    color: #6b7468;
+    font-weight: 400;
+}
+.site-detail-value {
+    font-size: 0.9rem;
+    color: #1a2e1a;
+    font-weight: 600;
+}
+
+/* ── Streamlit Component Overrides ──────────────────────────────────────── */
+
+/* Override Streamlit's default title styling */
+h1[data-testid="stMarkdownContainer"] > * {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    color: #1a2e1a !important;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #f4f6f4;
+    border-right: 1px solid #e2e8e2;
+}
+[data-testid="stSidebar"] h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #1a2e1a;
+    border-bottom: 2px solid #2c5f2e;
+    padding-bottom: 0.5rem;
+}
+[data-testid="stSidebar"] label {
+    font-family: 'Source Serif 4', serif;
+    color: #2a2a1e;
+}
+
+/* Button styling */
+button[kind="primary"], button[kind="secondary"] {
+    font-family: 'Source Serif 4', serif !important;
+    background-color: #2c5f2e !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 0.6rem 1.5rem !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.05em !important;
+    transition: all 0.2s ease !important;
+}
+button[kind="primary"]:hover, button[kind="secondary"]:hover {
+    background-color: #1a3d1c !important;
+    transform: translateY(-1px);
+}
+
+/* Regular buttons (like "Back to Overview") */
+button[data-testid="baseButton-secondary"] {
+    font-family: 'Source Serif 4', serif !important;
+    background-color: transparent !important;
+    color: #2c5f2e !important;
+    border: 1px solid #2c5f2e !important;
+    border-radius: 4px !important;
+    padding: 0.5rem 1.2rem !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.05em !important;
+    transition: all 0.2s ease !important;
+}
+button[data-testid="baseButton-secondary"]:hover {
+    background-color: #2c5f2e !important;
+    color: #ffffff !important;
+}
+
+/* Data table styling */
+[data-testid="stDataFrame"] {
+    font-family: 'Source Serif 4', serif;
+}
+[data-testid="stDataFrame"] thead {
+    background-color: rgba(44, 95, 46, 0.08);
+    color: #1a2e1a;
+}
+
+/* Expander styling */
+[data-testid="stExpander"] {
+    border: 1px solid #c8bfa8 !important;
+    border-radius: 4px !important;
+    background: rgba(44, 95, 46, 0.02) !important;
+}
+[data-testid="stExpander"] summary {
+    font-family: 'Source Serif 4', serif !important;
+    color: #2a2a1e !important;
+    font-weight: 600 !important;
+}
+
+/* Radio button styling */
+[data-testid="stRadio"] label {
+    font-family: 'Source Serif 4', serif !important;
+    color: #2a2a1e !important;
+}
+
+/* Year selection radio buttons - make them look like buttons */
+[data-testid="stRadio"] div[role="radiogroup"] label {
+    background-color: rgba(44, 95, 46, 0.08);
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    margin: 0.3rem 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: block;
+}
+
+[data-testid="stRadio"] div[role="radiogroup"] label:hover {
+    background-color: rgba(44, 95, 46, 0.15);
+}
+
+[data-testid="stRadio"] div[role="radiogroup"] label[data-checked="true"] {
+    background-color: #2c5f2e;
+    color: #ffffff !important;
+}
+
+[data-testid="stRadio"] div[role="radiogroup"] label[data-checked="true"] div {
+    color: #ffffff !important;
+}
+
+/* Select slider styling */
+[data-testid="stSlider"] label {
+    font-family: 'Source Serif 4', serif !important;
+    color: #2a2a1e !important;
+}

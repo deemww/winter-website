@@ -1,0 +1,30 @@
+# Git and environments
+.git/
+.gitignore
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook-related files
+*.ipynb
+.ipynb_checkpoints/
+
+# Python cache and byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Terraform / OS generated files
+.terraform/
+*.tfstate
+*.tfstate.backup
+.DS_Store
+Thumbs.db
