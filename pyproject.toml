@@ -35,7 +35,8 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["."]
+exclude = ["data*", "output*", "notebooks*", "pages*", "stan_models*"]
 
 [tool.ruff.lint]
 extend-select = [
