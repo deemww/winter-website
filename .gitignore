@@ -139,8 +139,8 @@ venv.bak/
 # data files
 *.avro
 
-# data directory
-data/
+# data directory (top-level only)
+/data/
 
 # Jupyter Notebooks
 .ipynb
