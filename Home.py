@@ -125,7 +125,7 @@ with st.spinner("Loading geographical and calibration data..."):
         # Display high-level metrics right below the loading spinner
         m1, m2, m3 = st.columns(3)
         m1.metric("Total Sites Loaded", len(map_data))
-        m2.metric("Total Capacity (zbar_2017)", f"{map_data['zbar_2017'].sum() / 1e11:.2f} B")
+        m2.metric("Total Capacity (zbar_2017)", f"{map_data['zbar_2017'].sum() / 1e6:.2f} M ha")
         m3.metric("Avg Deforestation Rate ('08-'17)", f"{map_data['defor_rate_08_17'].mean():.4f}")
 
         # Expandable dataframe preview
