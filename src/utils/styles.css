@@ -340,3 +340,19 @@ button[data-testid="baseButton-secondary"]:hover {
     font-family: 'Source Serif 4', serif !important;
     color: #2a2a1e !important;
 }
+
+/* ── Metric Overrides ───────────────────────────────────────────────────── */
+[data-testid="stMetric"] {
+    background: rgba(44, 95, 46, 0.04);
+    border: 1px solid #c8bfa8;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+[data-testid="stMetric"] label {
+    color: #2c5f2e !important;
+}
+
+[data-testid="stMetric"] [data-testid="stMetricValue"] {
+    color: #1a2e1a !important;
+}
