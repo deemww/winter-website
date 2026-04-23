@@ -16,6 +16,7 @@ st.set_page_config(
     layout="wide",
     page_title="Amazon Deforestation Dashboard",
     page_icon="🌿",
+    initial_sidebar_state="expanded",
 )
 
 # ── Load shared styles ────────────────────────────────────────────────────────
